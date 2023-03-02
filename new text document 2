@@ -1,0 +1,573 @@
+import axios from 'axios';
+import React, { useEffect } from 'react'
+import { useState } from "react"
+import {useHistory} from "react-router-dom"
+
+function ProductEdit(props) {
+
+    const [productName, setproductName] = useState("");
+    const [price, setPrice] = useState("");
+    const [isLoading, setLoading] = useState(false);
+    let history=useHistory();
+
+
+    //get the data from DB using id
+    //populate in form 
+    //update in db
+    useEffect(async () => {
+        try {
+        let product=await axios.get(`https://60efffc2f587af00179d3c27.mockapi.io/users1/${props.match.params.id}`)
+        //console.log(product)
+        setproductName(product.data.productName);
+        setPrice(product.data.price);
+
+        }
+        catch (error) {
+            console.log(error);
+        }
+    }, [])
+
+    let handleSubmit = async(e) => {
+        e.preventDefault();
+        try {
+            setLoading(true);
+            await axios.put(`https://60efffc2f587af00179d3c27.mockapi.io/users1/${props.match.params.id}`, { productName, price })
+            setLoading(false); 
+            history.push("/product")
+        }
+        catch(error){
+            console.log(error);
+        }
+       
+    }
+
+    return (
+        <div>
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="h3 mb-0 text-gray-800">Edit Product</h1>
+            </div>
+            <div className="container">
+                <form onSubmit={handleSubmit}>
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <label>Product Name</label>
+                            <input type="text" value={productName} onChange={(e) => { setproductName(e.target.value) }} className="form-control" required></input>
+                        </div>
+                        <div className="col-lg-6">
+                            <label>Price</label>
+                            <input type="text" value={price} onChange={(e) => { setPrice(e.target.value) }} className="form-control" required></input>
+                        </div>
+                        <div className="col-lg-12">
+                            <input type="submit" value="Update" className="btn btn-primary mt-3" disabled={isLoading}/>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+
+        </div>
+    )
+}
+
+export default ProductEdit
+??????????????????????????????????????????????????????
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import { Bar,Pie } from '@ant-design/plots';
+
+
+function Chart() {
+  const data = [
+    {
+      name: "Praveen Travels",
+      booked_seat: 12,
+    },
+    {
+      name: 'KSR travels',
+      booked_seat: 22,
+    },
+    {
+      name: 'PRNP travels',
+      booked_seat: 13,
+    },
+    {
+      name: 'KPN travels',
+      booked_seat: 14,
+    },
+    {
+      name: 'Devan Travels',
+      booked_seat: 14,
+    },
+    {
+      name:"SRM travels",
+      booked_seat:12,
+    }
+  ];
+  const config = {
+    data,
+    xField: 'booked_seat',
+    yField: 'name',
+    seriesField: 'name',
+    legend: {
+      position: 'top-left',
+    },
+  };
+
+  const configPie= {
+    appendPadding: 10,
+    data,
+    angleField: 'booked_seat',
+    colorField: 'name',
+    radius: 0.75,
+    label: {
+      type: 'spider',
+      labelHeight: 28,
+      content: '{name}\n{percentage}',
+    },
+    interactions: [
+      {
+        type: 'element-selected',
+      },
+      {
+        type: 'element-active',
+      },
+    ],
+  };
+  return (
+  <div>
+<Bar {...config} />
+<Pie {...configPie} />
+</div>
+
+
+  )
+}
+
+export default Chart
+??????????????????????????????????????????????????????????????????????????????
+ "engines": {
+    "node": "18.12.1",
+    "npm": "8.19.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev":"nodemon server.js"
+  },
+
+
+async createProfile(reqbody : ProfileDto,res: any): Promise<Profiles>{
+  try{
+    let profile=await this.profileModal.create(reqbody);
+    console.log(reqbody);
+    return await profile.save();
+  }
+ catch{
+
+ }
+
+async createProfile(reqbody : ProfileDto): Promise<Profiles>{
+  const profile = new this.profileModal(reqbody);
+  console.log(reqbody);
+  return await profile.save();
+}
+ async createProfile(reqbody : ProfileDto,res: any): Promise<void>{
+    try{
+      let profile=await this.profileModal.create(reqbody);
+      const data=reqbody.companyWebsite;
+      console.log(reqbody.companyName.length);
+      const verify=data.split('.');
+      if(verify[0]==="www" && verify[2]==="com")
+      {
+      await profile.save();
+      return res.send({statusCode: 200, status: 'success', message: 'user profile created successfully'})
+      }
+      else{
+        return res.send({statusCode: 400,status: 'error', message: 'invalid website'})
+      }
+    }
+   catch{
+    return res.send({ statusCode: 500, status: 'error', message: 'something went wrong' })
+   }
+  }
+
+/////////////////////////////////
+User Name,Password
+auxilia-at-279412542253,ArkehXfYOa2gkyRk2rD6K9W/+ItdIYAVAQcQ38m475Y=
+
+/////////////////////////////////////
+Pull both frontend and backend from code commit repo:
+git pull origin main
+git checkout main
+nestjs-final folder>git pull origin saci
+cd frontend
+npm i
+npm run dev
+///////////////////////////
+npm run build : 
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+?????????????????????????????
+user service
+// import { Profiles } from './interface/freelancer_profile.interface';
+// import { ProfileDto, UpdateProfileDto } from './dto/freelancer_profile.dto';
+// @InjectModel("Profiles") private profileModal :Model<Profiles>,
+
+ //create freelancer profile
+//    async createProfile(reqbody : ProfileDto,res: any): Promise<void>{
+//     try{
+//       let profile=await this.profileModal.create(reqbody);
+//      console.log(profile);
+//       await profile.save();
+//       return res.send({statusCode: 200, status: 'success', message: 'user profile created successfully'})
+//     }
+//    catch{
+//     return res.send({ statusCode: 500, status: 'error', message: 'something went wrong' })
+//    }
+//   }
+
+//   //update freelancer profile
+// async updateProfile(id:string,reqbody:UpdateProfileDto,res:any):Promise<void>{
+// try{
+//  let updatedProfile= await this.profileModal.findByIdAndUpdate(id,reqbody,{
+//     new:true,
+//     runValidators:true,
+//   });
+// //  console.log(updatedProfile);
+//   return res.send({statusCode: 200, status: 'success', message: 'user profile updated successfully'})
+// }
+// catch{
+//   return res.send({ statusCode: 500, status: 'error', message: 'something went wrong' })
+// }
+// }
+??????????????????????????????????????????
+user Module:
+// import {profileSchema}from './schema/freelancer_profile.schema';
+  // {name:"Profiles",schema: profileSchema}
+
+ // {
+      //   name: 'Profiles',
+      //   schema: profileSchema,
+      //   collection: 'Profiles'
+      // },
+
+?????????????????????????????????????????????????????????????
+user controller
+// import { ProfileDto, UpdateProfileDto } from './dto/freelancer_profile.dto';
+
+// //create freelancer
+  // @Public()
+  // @Post("/createprofile")
+  // async createProfile(@Body() req: ProfileDto,@Res() res:any){
+  //   try{
+  //     await profileSchema.validateAsync(req);
+  //     return await this.usersService.createProfile(req,res)
+  //   }
+  //   catch(error: any){
+  //     return res.send({ statusCode: 500, status: 'error', message: error.message })
+  //   }    
+  // }
+
+  // //update freelancer
+  // @Public()
+  // @Put("/:id")
+  // async updateProfile(@Param("id") id:string,@Body() req:UpdateProfileDto,@Res() res:any){
+  //   try{
+  //     await updateProfileSchema.validateAsync(req);
+  //     return await this.usersService.updateProfile(id,req,res);
+  //   }
+  //   catch(error:any){
+  //     return res.send({ statusCode: 500, status: 'error', message: error.message })
+  //   }
+  // }
+?????????????????????????????????????????????????????????
+dto
+// import { ApiProperty } from '@nestjs/swagger';
+
+// export class ProfileDto {
+//     @ApiProperty()
+//     user_name:string;
+//     @ApiProperty()
+//     display_name:string;
+//     @ApiProperty()
+//     email:string;
+//     @ApiProperty()
+//     gender:string;
+//     @ApiProperty()
+//     about_myself:string;
+//     @ApiProperty()
+//     hourly_rate:string;
+//     @ApiProperty()
+//     time_zone:string
+//     @ApiProperty()
+//     country:string
+//     @ApiProperty()
+//     street_address:string
+//     @ApiProperty()
+//     city:string
+//     @ApiProperty()
+//     zipcode:string
+//     @ApiProperty()
+//     mobile_number:string
+//     @ApiProperty()
+//     portfolio:string
+//     @ApiProperty()
+//     skills:string
+//     @ApiProperty()
+//     education:string
+//     @ApiProperty()
+//     certificate:string
+//     @ApiProperty()
+//     experiance:string
+//     @ApiProperty()
+//     language:string
+//     @ApiProperty()
+//     work_history:string
+// }
+
+// export class UpdateProfileDto{
+//     @ApiProperty()
+//     user_name:string;
+//     @ApiProperty()
+//     display_name:string;
+//     @ApiProperty()
+//     email:string;
+//     @ApiProperty()
+//     gender:string;
+//     @ApiProperty()
+//     about_myself:string;
+//     @ApiProperty()
+//     hourly_rate:string;
+//     @ApiProperty()
+//     time_zone:string
+//     @ApiProperty()
+//     country:string
+//     @ApiProperty()
+//     street_address:string
+//     @ApiProperty()
+//     city:string
+//     @ApiProperty()
+//     zipcode:string
+//     @ApiProperty()
+//     mobile_number:string
+//     @ApiProperty()
+//     portfolio:string
+//     @ApiProperty()
+//     skills:string
+//     @ApiProperty()
+//     education:string
+//     @ApiProperty()
+//     certificate:string
+//     @ApiProperty()
+//     experiance:string
+//     @ApiProperty()
+//     language:string
+//     @ApiProperty()
+//     work_history:string
+// }
+?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+interface
+// import { Document } from 'mongoose';
+
+// export interface Profiles extends Document{
+//     id:string,
+//     user_name:string,
+//     display_name:string,
+//     email:string,
+//     gender:string,
+//     about_myself:string
+//     hourly_rate:string,
+//     time_zone:string,
+//     country:string,
+//     street_address:string,
+//     city:string,
+//     zipcode:string,
+//     mobile_number:string,
+//     portfolio:string,
+//     skills:string
+//     education:string,
+//     certificate:string,
+//     experiance:string,
+//     language:string,
+//     work_history:string,
+// }
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+schema
+// import mongoose from 'mongoose'
+
+// export const profileSchema = new mongoose.Schema({
+//     user_name: {
+//         type: String,
+//     },
+//     display_name: {
+//         type: String,
+//     },
+//     email:{
+//         type:String,
+//     },
+//     gender:{
+//         type:String,
+//     },
+//     about_myself: {
+//         type: String,
+//     },
+//     hourly_rate: {
+//         type: String,
+//     },
+//     time_zone: {
+//         type: String,
+//     },
+//     country: {
+//         type: String,
+//     },
+//     street_address:{
+//         type:String,
+//     },
+//     city:{
+//         type:String,
+//     },
+//     zipcode:{
+//         type:String,
+//     },
+//     mobile_number:{
+//         type:String,
+//     },
+//     portfolio:{
+//         type: String,
+//     },
+//     skills:{
+//         type:String,
+//     },
+//     education:{
+//         type:String,
+//     },
+//     certificate:{
+//         type: String,
+//     },
+//     experiance:{
+//         type:String,
+//     },
+//     language:{
+//         type:String,
+//     },
+//     work_history:{
+//         type:String,
+//     }
+// }, {
+//     timestamps: true
+// })
+
+// export default mongoose.model('Profile', profileSchema);
+???????????????????????????????
+masters:
+bus:{
+    type:mongoose.Schema.ObjectId,
+    ref:"buses",
+    required:true,
+},
+user:{
+    type:mongoose.Schema.ObjectId,       
+    ref:"users",
+    required:true,
+},
+???????????????????????????????????????????????????????????????????
+skills:[{
+	type:mongoose.Schema.Types.ObjectId,
+	ref:"skills",
+	}],
+});
+?????????????????????????????????????????????????????????????
+Hi sir,Today's status update:
+i have implementing create and update profile for freelancer. and analyzed the unauthorized error.will work on with vijay
+and complete it sir.
+
+Hi sir, Today's status update:
+i have implementing create and update profile for freelancer. and analyzed the unauthorized error. will work on with vijay and complete it sir.
+
+  //  @ApiConsumes("multipart/form-data")
+  //  @ApiBody({type:FreelancerDto})
+
+<<<<<<< HEAD
+    MongooseModule.forFeature([{ name: 'Users', schema: userSchema },
+  ]),
+    MongooseModule.forFeature([
+      {
+        name: 'Users',
+        schema: userSchema,
+        collection: 'Users'
+      },
+     
+    ])],
+=======
+    MongooseModule.forFeature([{ name: 'Users', schema: userSchema }])],
+>>>>>>> 266ec7ec0ee06729d529f6a3bf067ea0177c9dc6
+  controllers: [UsersController],
+  // providers: [UsersService, GoogleStrategy,SessionSerializer],
+  providers: [UsersService],
+  exports: [UsersService],
+///////////////////////////////////////////////////////////////
+ // upload_resume:{
+    //     type:String
+    // },
+ // personal_info:[{
+    //     name:{
+    //         type:String
+    //     },
+    //     gender:{
+    //         type:String
+    //     },
+    //     country_code:{
+    //         type:String
+    //     },
+    //     phone_number:{
+    //         type:String,
+    //     },
+    //     address:{
+    //         type:String,
+    //     },
+    //     image:{
+    //         type:String,
+    //     }
+    // }], 
+// zipcode:joi.string().regex(/^[1-9][0-9]{5}$/).message("zipcode minimum 6 and maximum 9").required(),
+???????????????????????????????????????????????????????????????????
+package-lock.json
+{
+  "name": "hireprogrammers",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {}
+}
+????????????????????????????????????????
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { MongooseModule } from '@nestjs/mongoose';
+import { AppService } from './app.service';
+import { UsersModule } from './api/users/users.module';
+import { AuthModule } from './api/auth/auth.module';
+import { FileuploadModule } from './api/fileupload/fileupload.module';
+import { EmployerProfileModule } from './api/employer/employerProfile/employer.module';
+import { EmployerModule } from './api/employer-project/employer.module';
+import { FreelancerModule } from "./api/freelancer/masters/freelancer.module";
+require('dotenv').config()
+
+@Module({
+  imports: [
+    MongooseModule.forRoot(process.env.MONGODB_URI_CLIENT),
+    EmployerModule,
+
+    UsersModule,
+    EmployerProfileModule,
+    AuthModule,
+    FileuploadModule,
+    EmployerModule, 
+    FreelancerModule
+  ],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule { }
+
+
+
