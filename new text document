@@ -1,0 +1,541 @@
+Hi sir,Today's status Update:
+I have implementing one to many relationship for products and reviews. for one product there are many reviwes in it and
+review belongs to particular products with product id, using sequelize orm i have done it.i have got my system changed at
+evening sir,system little bit slow and i am working on the installation and neccessary downloads sir.
+
+Hi sir,Today's status Update:
+I have implementing bulkcreate of products using sequelize orm with nodejs.one to one relationships and one to many
+relationship with products.and i have to work with many to many relationships with some products have belongstomany 
+method.i am working on with that sir.
+
+Hi sir,Today's Status Update:
+I have implementing postgresql with nodejs project using postgre sql queries.using sql shell i have created database and
+making queries with pool.query()connection.and i have studied all psql commands sir.i have implemented crud operations
+with that postgre sql commands.
+
+Hi sir,Today's Status Update:
+I have implementing nodejs project with converting json array to csv file and converting csv file to json array in nodejs.
+and implemented readfile sync in json from file and write json to file.and have to implement get templates and download 
+all the files in data base using excel format sir.
+
+Hi sir,Today's status Update:
+i have implementing the get templates with all details in it including image and user details.with that bulk file in get
+templates i have to view this in excel file with download option.so i am doing the code with exporting a large Json data
+to an excel file using json-2-csv library sir.and i am exploring exceljs library for bulk data.
+
+Hi sir,Today's status Update:
+i have implementing project with converting json array to a csv file.after importing a csv file in project, i have to parsing
+a csv file using nodejs.i have parsed the csv file using fs.createReadStream() method in nodejs.and i have to update the excel
+file details in that using exceljs. so i am working on it sir.
+
+Hi sir,Today's status Update:
+I have implementing qr code generator app using nodejs.for server side rendering i am using ejs npm module.for input text qr code generator
+i am using qrcode npm module.if i give any text or url in input it will generate the qr code.In qr code i am passing object.it came all
+the way from index.ejs. with that i can able to generate the qr code.i have applied css and bootstrap for styling the page.
+
+Hi sir,Today's status Update:
+i have implementing the project with converting json into excel sheets in nodejs using xlsx package.and i can able to see the data details
+in excel sheet.and i have implenting the task manager application for nodejs.in that application i have done completing the getall tasks,
+create task,update,and delete.and have to do the productstore api in that advanced filtering,storing features sir.
+
+Hi sir,Today's status Update: 
+i have going through the nestjs documentation.i have reviewed my previous projects related to nestjs.and i have going through how my 
+application works in typescript with both postgresql and mongoose database. and i will do one nestjs project with mongodb database
+sir and will explore about the helmet middleware.
+
+Hi sir,Today's Status Update:
+i have implementing nodejs project with nestjs framework and mongodb database.in this project i have implementing prodcuts model
+with name,image,category,description,instock,price details in it.i have created interface of product model in mongodb.then i have 
+done creating create-product dto and update-product dto.dto's have all these decorators.i have created service which will be
+the interface between the request made to the nestjs app and the db.i have to create controllers and the logic sir.
+
+what are all the deliveries can be done?
+modules and task... he will give me that tomorrow... i have to work on that...
+what are the modules - Database - mongodb , backend-node, backend-framework:express ...front-end: reactjs, 
+what are the tasks? - users, admin...
+users:authen                         admin-auth
+login-					login-									
+password                       		password
+queries..
+what are all the Documents needs to be done....
+Bus ticket Booking - MERN stack
+???????????????????????????????????????????????????????????????????????????????????????????????????????????????
+registration page:-name,email,password needs to be done...
+after registration i am getting the user created successfully...
+it will directly navigated to the login page.
+negative scenarios also needs to be taken care.if i enter same emailid - it has to throw the error.
+invalid login means - this email id doesnot exist in our database..incorrect password means- it will be throwing incorrect password message..
+valid mailid,valid password means-click login button: it will navigate to the bus ticket booking application..
+sidebar,header,  and body in body ie below header:the page will be rendered..
+in authentication:im gonna have two roles 1.normal user, 2.admin..the loggedin user is :normal user.
+in home page: Home,Bookings,profile,logout.:filter the buses using from place to place - as well as journey date
+home page:select the bus,filter the bus.. bus name:from to journey date, fare and book now
+then it will navigated to the book now page.
+1>virtual bus has to be created..bus details from and to journey date, seat capacity,..we can select the bus seats.. also..and fare get added accoding to the seats booked.
+using stripe payment gateway..it will hit the payment api..once its suucessful..pay..payment successful,and the bus is booked successfully .we will be having the details in booking.
+Bookings:
+bus name,bus number,journey date,journey time,seats,action-print ticket:click print:pdf
+if i logged in with the admin:the role is changed and the side bar menu has :home, buses,users,bookings,logout, also changed..
+in user bookings: - will get only the specific user. in admin bookings: we will get all the bookings thats all..
+buses:(any new service on particular day) - Add bus and name of the bus,number,from to,journey date,status,action..
+add bus:... new bus service :bus name,number,capacity,from,to,journeydate,departuretime,arrival time,type :Ac-non ac,fare-amount,status -yet to start..save :bus added successfully:
+edit the details, that is crud..we can not able to add the same number with same bus name: it will shown bus is already exists.
+so lets assume the bus has done its journey and the tickets are also sold successfully..now we have to update the status to completed means..it wont be visible to the homepage.
+so in display :its shown only yet to start buses...
+Redux setup
+* using this i can have only one state for my app, and not states for each of my components.
+????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+hi sir, above the task and modules i am going to use in bus ticket booking application.
+?????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+Hi sir,Today's Status Update:
+i have selected bus ticket booking application for my full stack project. i have going through how the application works and everything.
+i have analyzed and split the user,admin roles with modules and tasks.i have made the documentation for the project with login screen,
+registration screen,home page,user screen,admin screen with what are all the features in it.and i was working on controllers for the
+nestjs project.
+
+Hi sir,Today's status Update:
+i have sent the weekly report of bus ticket booking application with tasks and timeline. i have started working on the
+mern stack project with react setup,npm modules and folder structure.Needs to work on the project flow with mongodb
+connection and front end structure.
+
+Hi sir,Today's status Update:
+i have created database in mongodb and got connected with the project.i have created routes path in main file with home page,login page
+and register page.i have linked bootstrap for styling and antd library for ui.i have created registration screen, login screen routes
+layout structure and css with minimal design.Needs to work on the authentication backend and home page.
+
+Hi sir,Today's status update:
+I have implementing authentication backend with usermodel and registration api.registration api with integration to frontend and
+login api,login api integration.i have implementing jwt token generation in login page.i have to verify and decrypt the jwt token,
+get the userid using middleware function.and have to work on with home page layout.
+
+Hi sir,Today's status update:
+I have verified and decoding the userid using middlewares for authentication.login screen,reg screen and home page screen and navigation
+working fine.i have installed redux and redux toolkit implementation for the state management.and i have created loading spinners
+and alerts messages in reducers state.and i am working on layout page sir.
+
+Hi sir,Today's status update:
+i have implementing sidebar layout of home,buses,users,booking pages in home screen for the adminpage.and navigation working fine with the
+respective pages.and implementing sidebar layout for endusers menu in homescreen and checking respective rendering pages for the path.
+Needs to work on the add buses.
+
+1.add bus module completed
+needs to work on the displaying bus list
+bus list with edit and delete options.
+i have to write api for get all buses..
+data fetched successfully in bakend..
+we have to show the data in the table.. for that i have to create columns for the table..
+i am doing edit bus..
+
+Hi sir,Today's status update:
+i have implementing add bus module in admin screen. and also fetched all the bus list displaying in the admin screen.For fetching all bus list
+i have written api for get all buses. This bus list has name, number, from, to, journeydate, action. and this action has edit and delete options
+ for buses. i am working on the edit bus sir.
+
+1.edit bus done
+2.delete-bus done
+3.Actual user interface for the bus booking application..
+4.in user homepage the list of buses is there.kind of dashboard.i am going to render this..
+
+Hi sir,Today's status Update:
+i have implementing edit bus api, and edit bus form screen implementation, deletebus api and delete bus functionality in admin screen.
+For displaying all the buses list for users, i am creating user dashboard with get all buses in the list.i have to render all the bus
+list.so i am working on the user dashboard sir.
+
+Hi sir,Today's status Update:
+i have implementing userdashboard page for all the bus list in the application with details of from,to,price,journey date and
+book now details.if i click on booknow its navigating to the particular bus with the respective bus_id of the bus. i have to work
+on the booking page with selected seats.
+
+Hi sir,Today's status update:
+i have implementing get bus by id api for the book now page.and implementing loading component for all functionalities.and fixed login,
+registration screen for frontend.and working on with css design for boxes,border,card and button.i have implementing book now page
+with bus name,from ,to, departure,arrival. Needs to implement virtual bus seats box for selecting seats.
+
+1.designing seat selection component.
+2.
+
+hi sir,please let me know if you have time to review the project.
+or else let me know if u want me to send the recordings...
+
+
+    //im going to get seat number
+    const selectOrUnselectSeats=(seatNumber)=>{
+        //if it is already selected in the included seat im going to remove it..
+       if(selectedSeats.includes(seatNumber)){
+        setSelectedSeats(selectedSeats.filter((seat)=>seat!==seatNumber))
+       }
+       else{//im going to add it..
+        setSelectedSeats([...selectedSeats,seatNumber]);
+       }
+
+
+//background color checking
+            
+            let seatClass="";
+            //empty means available..
+
+            // seats starts with 1 
+            if(selectedSeats.includes(seat+1))
+            {
+                seatClass="selected-seat"
+            }
+            return (
+            <Col span={6}> 
+            {/* 4 seats per 1 row 6*4=24 */}
+            {/* its dynamic whether its selected or booked */}
+                <div className="seat" onClick={()=>selectOrUnselectSeats(seat+1)}>
+                    {/* seat+1 means seatNumber */}
+                    {seat+1}
+                </div>    
+            </Col>)
+        }
+           
+         )}
+        </Row>
+
+
+/*styling for specific pages*/
+/*styling for specific components */
+
+Hi sir,Today's status update:
+i have started doing seat selection components for bus ticket booking application. if i select the seat i can able to see weather the
+bus seat is available or booked or not.i have completed the bus capacity is looped accordingly based on the bus capacity.needs to
+working on with the functionalities sir.
+
+Hi sir, Today's status update:
+i have implementing the selected seats numbers using join method,rendering total price for the selected seats and seats left. if i select
+the seats and click on book now button i can able to see its booked succesfully message with gray color in it.so if it is a booked 
+seat in seats booked array,other people can not book this.i need to implement this sir.
+
+Hi sir,Today's status Update:
+1.creating masters for from to and type of vehicles..
+2.creating deleting file validation for frontend admin buses.
+3.needs to work on with the filter and serach buses for the home page..
+
+Hi sir,Today's status Update:
+i have implementing manually booked seats for the book now page.if i booked seats in available i can able to book the seats.if it's already booked
+means its shown gray color, and the cursor is disabled.i have written booking model,book seat api for this with transaction id, the booking is 
+unsuccessful and its not added in selected seat booked array sir.so i am looking into it sir.and i have implementing deleting validation for admin page.
+
+Hi sir,Today's status update:
+i have implementing book now page with booked successfully message.after booked i can able to render the seats color to gray, so that other people cant book
+this seat.In the selected seat booked array the seats are added fine in db.i have done implementing front end for the seat selection and have to work on
+with the filter for the buses from,to location and date.
+
+Hi sir,Today's status update:
+i have creating front end for the filters for buses from, to location and date.i have made changes in get all buses api.if i give any of the details
+it filtered from getbuses and show the result. and i have implementing this using spread operators.i have implementing creating masters in admin page
+for the from location, to location and type of vehicles.and have to do the manage bookings page.
+
+Hi sir,Today's status update:
+i have implementing users page profile for frontend and have written api for get all users. so if i click the users admin can able to view name,email
+and role for the users.i have rendered all the details in table according to the roles.i have to implement manage bookings for both the user and admin.
+
+Hi sir,Today's status update:
+i have implementing manage booking for both users and admin.for manage bookings i have written api's for get booking by user id and i have given
+ref in models based on that i have pulled it from buses collections and users collections.i have fetched all the bookings in tabular column for
+bookings.in bookings i have added print ticket pop up sir.
+
+Hi sir,Today's status update:
+i have implementing manage bookings but while i rendering the tabular column its showing error in both users and admin page. i am looking that error
+sir.and in bookings i have included bus name,from and to, journey date using moment library for date format,departure,arrival,seat numbers,total amount
+for seats bookings in modals sir.
+
+Hi sir,Today's status update:
+i have implementing print ticket features.in that i am getting error.so i am resolving that error,now its working fine with print ticket model
+rendering sir.In admin page profile i have to implement the buses filters, users filter and admin can able to change the admin and admin can 
+able to delete the users.
+
+Hi sir,Today's status update:
+i am working on users filters in admin page and buses filter in admin page sir. i have to implement admin page role for users and admin.
+admin can able to add another admin and admin can able to delete the users. and admin can control all the users and permissions.
+
+Hi sir, Today's status update:
+I have implementing buses filters in admin page and implementing users filters in admin page.i have to implement admin page role for users
+and admin.admin can able to add another admin and admin can able to delete the users. and admin can control all the users and permissions.
+
+Hi sir,Today's status update:
+1.i will perform actions to block the users..in Admin users page...
+i have to write logic for 4 different actions..
+make admin,remove admin,block and unBlock in admin users page..
+i have added status column in users profile, in this if it is blocked its shown blocked otherwise it shown active..
+
+2.
+
+Hi sir,Today's status update:
+i have implementing perform actions to block the users in admin users page frontend.i have written four different logic for actions. unblock
+the user, block the user, make admin and remove admin.i have added status column in users profile, in this if it is blocked its shown blocked
+otherwise it shown active.
+
+
+Hi sir,Today's status update:
+1.if the user is blocked by admin.if the user tries to login, it throws the error like your account has been blocked by admin...can not be able to login..
+2.
+
+Hi sir, Today's status update:
+i have created the update user permission api.so in admin users page if admin wants to make another user admin it has to be updated in this user profile.
+for that i am creating this update user permission api.i have to implement if the user is blocked by admin. i have to update its got blocked, so the user
+account needs to get blocked. if the user tries to login, it throws the error like your account has been blocked by admin and cannot able to login.
+
+Hi sir,Today's status update:
+i have implementing if the user is blocked by admin.its showing an action status like blocked,if i press unblock its showing the status like active.
+so if the blocked user tries to login its throwing error like your account has been blocked by admin and cannot able to login message.if i unblock the
+same user, user can able to login.i have to work on the same in make admin,remove admin.
+
+
+Hi sir,Today's status update:
+1.heroku scripts
+2.deploying in heroku
+3.
+
+https://www.udemy.com/course/react-redux/
+https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/
+https://www.udemy.com/course/nodejs-the-complete-guide/
+https://www.udemy.com/course/the-complete-nodejs-developer-course-2/
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/
+https://www.udemy.com/course/the-complete-web-development-bootcamp/
+https://www.udemy.com/course/the-web-developer-bootcamp/
+https://www.udemy.com/course/full-stack-web-development-bootcamp-with-mern-stack-projects/
+
+https://stackoverflow.com/questions/74073645/closing-a-modal-using-usestate-hook-in-react
+
+Hi sir,Today's status update:
+i have implementing the action for make admin,remove admin in admin users page.if i click on the make admin, the user will get the admin access, if i press
+remove admin the admin becomes normal user, and does not get the admin dashboard the normal user dashboard will come on home page. i have implementing
+all these admin users profile features sir.
+
+https://dashboard.render.com/web/srv-cerb5kun6mpr60c4bslg/deploys/dep-cerbjomn6mpr60c5e7kg
+
+Hi sir,Today's status update:
+i have to implement the home page for guest users, and needs to implement barchart, pie chart features in dashboard for both admin and users.
+so i am doing that sir.
+
+Hi sir,Today's status update:
+i have created home page rendering with login button in it. if i click on the filters search i can able to see the buses and location from and to. if i press
+the book now button its showing the pop up with please login or signup to continue.if i login its navigating to the login page. Needs to implement the bar chart
+and pie chart graph.
+
+Hi sir,Today's status update:
+i have tried to install ant design charts library for charts.while i installing i am having errors continuously because of the version change.i have downgrad the
+version and installed with some packages, now its working fine sir. and i have implementing bar chart with get all bookings api fetching for admin page.while i 
+rendering the page i can able to see the bus name with seatsbooking in different colours. 
+
+
+Hi sir, Today's status update:
+i have implementing bar chart for admin with all the bus name with booked seats in different colors. and i have implementing the user page bar chart for the
+users,if i click on the chart details in user page i can able to see booked seats for the buses with name on it.
+
+Hi sir, Today's status update:
+i have going through the whole bus ticket application and fixed one authorization error while login the admin user.i have make bus changes in bar chart detail
+in both admin and user and i have studied concepts of how to deploy this project in nginx or render.i have to deploy this in website sir.
+
+Hi sir,Today's status update:
+i have connected backend code in render application with help of github account, after connecting it i have added environment variables of mongodb url and jwt
+secret string. after adding this while deploying i am continuously getting the failed message. so i am looking into it sir.
+
+Hi sir,Today's status update:
+i have implementing backend code deploying with render website. while deploying the website the backend successfully running. and deploy the build also
+successful.but i am getting the gateway error of can not get i am looking into it sir.so i am trying to deploy this in aws.so i have going through the aws
+concepts sir.
+
+https://tktbooking-backendd.onrender.com/
+
+Hi sir,Today's status update:
+i have working on with hosting of the project. i have followed many steps for both render and netlify for frontend and backend. i am still not getting the hosting
+website.in build i am getting the error with build failed message.so i am working on while logging in i am receiving authorization error.so i am working on it sir. 
+
+Hi sir,Today's status update:
+i have cleared the authorization error while logging in with the admin page.i have reviewed and going through the hire programmer website and freelancer website for
+what are all the requirements needs to be taken care. and make notes of the all modules and task details in the excel spreadsheet.
+
+Hi sir,Today's status update:
+i have reviewed and take notes of the freelancing website and mention in it in spreadsheet sir.i have added admin masters for both hire freelancers and freelancers.
+and i have going through required websites for it sir.
+
+Hi sir,Today's status update:
+i have reviewed hireprogrammer, upwork and freelancer website for project work flow understanding.and making notes for the features and masters for both employer
+and freelancers.Needs to work on the milestones and project work flow details task in the excel sir.
+
+Hi sir,Today's status update:
+i have worked on with milestones needs to be completed on the tasks. and i have added step by step process for the application. Needs to check one more time if
+i have written every functionalities and will update to you sir.
+
+Hi sir,Today's status update:
+i have working with milestones of the application and i have added step by step process for the application. i have added every tasks on the application regarding
+to the project work flow sir.and i have going through websites and its features sir.
+
+Hi sir, Today's status update:
+i have worked on with the duration of each milestones and added the weekly deliverables for the milestones added. i have analyzed and prepare this weekly deliverable
+report according to the requirements and features sir. Tomorrow i will working on with the changes you mentioned sir.
+
+25/01/2023
+Hi sir,Today's status update:
+i have worked on with the changes in the modules/tasks and description with duration of each milestones and added the weekly deliverables for the milestones added.
+i have added necessary changes according to the instruction given sir. i will go through the project flow, will refer the websites and do screenshots for the 
+complex pages sir.
+
+
+auxi.win1
+Apple@123
+
+30/01/2023
+Hi sir,Today's status update:
+I have included all the necessary changes according to the instruction given by you sir.i have done screenshots for the complex pages and went through all the screens
+for the website sir.and i have going through the backend functionalities for the projects.
+
+31/01/2023
+Hi sir,Today's status update:
+I have implementing a file upload features for the nodejs project using multer library.deleting the uploaded file in database as well as in local folder.
+i have referred how the push notifications messages receiving and updating in websites for the backend using socket sir. Needs to work on with that sir.
+
+Hi sir,Today's status update:
+i have implementing file upload,deletefile in db and local folder.i have referred how the push notifications messages receiving and updating in websites for the backend
+using socket sir.i have created models and connections.Needs to work on with get data, post data and check all notifications.
+
+Hi sir,Today's status update:
+i have implementing a sockets using instance of the server. and implementing getdata, post data and check all notifications in sockets on connection.i have
+written two endpoints one is for get notification to retrieve all notifications and post notifications to create a new one.i have to implement notification
+alerts in reactjs using state management.
+
+Hi sir,Today's status update:
+I have added project architecture and technology with detailed diagram in base architecture. i have organized file structure for both backend and frontend in mern
+stack.and added naming conventions for variable,boolean,components,functions.i have added status and api responses for validation messages.i have added swagger
+ui documentation process sir.
+
+03/02/2023
+Hi sir,Today's status update:
+i have implementing source code for both frontend and backend.i have created frontend folder client and added neccessory files and folders in it.For backend i have
+added config, models,controllers,services with entry file in it.i have created swagger implementation in this base code.
+
+04/02/2023
+Hi sir,Today's status update:
+i have implementing base architecture for frontend using nextjs. i have insalled nextjs and added dotenv file for development and production.i have sent the
+zipped file to your mail sir.i do have modified changes in this base code sir.please check and correct me if anything wrong sir.
+
+06/02/2023
+Hi sir,Today's status update:
+i have learnt how to do nextjs project with server side rendering with examples.i am working on with the concepts of nextjs project.i have added development
+and production env files in config.json. i have learnt how to handle bunch of routes and dynamic routes using useRouter hook.
+import {useRouter} from "next/router";
+
+const Profile=()=>{
+const router=useRouter();
+
+const {username}=router.query;
+
+return <div> Hello {username} </div>
+);
+
+07/02/2023
+Hi sir,Today's status update:
+i have implementing and referred nextjs model projects with routes and file conventions.i have implementing nested routes and nested dynamic routes with pages,
+link navigation.i have implementing with static generation and data.i have to generate dynamic routes using getStaticPaths and getStaticProps.
+
+09/02/2023
+Hi sir,Today's status update:
+i have implementing registration and login screen api for hireprogrammer website.i have implementing swagger api implementation for registration api.and
+i have referred how to do microservices build in nodejs sir.
+
+10/02/2023:
+Hi sir,Today's status update:
+i have implementing forgot password using sendgrid website with environment varible of api key,service,from and to address.i have referred nestjs application
+documentations.i have reviewed nestjs project crud applications which i have done previously. i will explore nestjs concepts more sir.
+
+13/02/2023:
+Hi sir,Today's status update:
+i have referred and explored nestjs framework documentation and concepts.i have implementing registration api with name,email and password in it using nestjs
+application. i have implementing this nestjs application in swagger implementation.its working fine sir.i have worked on with nextjs to connect this backend
+with frontend.
+
+14/02/2023
+Hi sir, Today's status update:
+i have implementing nestjs microservices setup and while implementing the admin and client i am not getting into it sir. i am following the process and will 
+try to work on to complete it sir.
+
+15/02/2023
+Hi sir,Today's status update:
+i have implementing nestjs api for profile update and delete functionalities.i have tried to implement hashed passwords for the registration i am getting
+error.I am looking into it sir.i have going through the nestjs microservices for admin and client.i have explored configuration and validation in 
+microservices nestjs.
+////////////////////////////////////////////
+nest new proj_name
+nest g module book
+nest g controller book
+nest g service book
+.env-->mongodb_URI
+npm i mongoose @nestjs/mongoose @nestjs/config --save
+schema/book.schema.ts
+book.service-->constructor(@injectModel(){}
+book.module-->MongooseModule.forFeature()
+book.controller-->constructor(private bookservice:BookService){}
+for validation--> npm i class-transformer class-validator
+dto:
+//book -->the type of book we need, the type of data we are expecting from the user for that dto is using 
+//user will add some type of data in teh body..so we have to make sure the data is good at type
+//thats why dto is used...
+$ npm install --save @nestjs/passport passport passport-local
+$ npm install --save-dev @types/passport-local
+@nestjs/jwt
+npm i passport-jwt
+
+////////////////////////////////////////////////////////////////
+User Name,Password
+auxilia-at-279412542253,ArkehXfYOa2gkyRk2rD6K9W/+ItdIYAVAQcQ38m475Y=
+
+Hi sir,Today's status update:
+i have implementing pagination and search functionalities in nestjs application.i have implementing pipes in nestjs.For authentication i have used passport
+libary.i have referred and analyze the source code architecture and installed all dependencies and ran through the code.
+
+Authentocation process: protect my routes from the unauthentication users..we will create out jwt's strategy..
+jwt strategy for validating the user and protect our routes from,,i have passed token in the headers and now our route is protected..only authentcated users can access the route
+wanted to save the user in the book that has created..
+
+17/02/2023
+
+Hi sir,Today's status update:
+I have implementing jwt strategy for validating the user and protect the routes from unauthentication users.only authentication users can access and wanted to
+save the product that has created.and i have implemeting file upload features in this project.and i have referred the hire programmer source code architecture sir.
+
+18/02/2023
+Hi sir,Today's status update:
+i have referred nestjs microservices code for hireprogrammer website. and referred forgot password,reset password and email authentication in nestjs.i have
+attended reactjs,nextjs and nestjs training session sir.
+
+20/02/2023
+Hi sir,Today's status update:
+i have implementing login through social handles with google authentication using google oAuth strategy and nestjs.i have learnt the concept of auth guards in nestjs.
+i have now working on with forgot password and email authentication in nestjs.
+
+chnages i made 
+user.controller.ts
+users.module.ts
+users.service.ts
+profile.dto.ts
+profile.interface.ts
+profile.schema.ts
+validation.ts
+21/02/2023
+Hi sir,Today's status update:
+i have worked on with forgot and reset password in nestjs.i have referred the employer document and the requirements for the profile.i have created the schemas,
+interface and dto's.and implementing create profile and update profile.The api's working fine in swagger ui sir.
+
+How to push the code:
+git add .
+git status
+git commit -m "changes freelancer"
+no source control means----> u can publish the branch
+
+23/02/2023
+Hi sir,Today's status update:
+i have made changes according to what vijay said about the project.while implenting the token authorization which i received from login person. This token is not
+validating while creating or updating freelancer profile.so its thrown unauthorized error.and i am looking into it sir.and i am working on the file upload feature
+for the application sir.
+
+28/02/2023
+Hi sir,Today's status update:
+i have implementing freelancer profile for create and update and get profile.i have made changes and push the code in git repository.
+
+01/03/2023
+Hi sir,Today's status update:
+i have added personal information dto in freelancers masters.i have pulled the frontend code and talked to saci about the freelancer masters.
+i needs to work on with profile basics,and masters in frontend sir.
